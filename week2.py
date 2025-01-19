@@ -52,7 +52,9 @@ def displaySummary(container):
         Total_cost += cost_of_item_after_discounts 
         current_name = current_item["item_name"]
         current_price = current_item["item_price"]
-        print(f"item added: {items + 1}. {current_name} - Final Price: {current_price}")
+        color = current_item["color"]
+        weight = current_item["size"]
+        print(f"item added: {items + 1}. {current_name} - Final Price: {current_price}(color = {color}, weight = {weight}kg)")
 
     print(f"Total cost = {Total_cost}")
         
